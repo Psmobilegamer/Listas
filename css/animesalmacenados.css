@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #212529;
+    width: 80%;
+    margin: auto;
+}
+
+.list-group-item {
+    background-color: #212529;
+    color: white;
+    border: 2px solid rgb(255 255 255 / 16%);
+}
+
+.list-group-item:hover {
+    background-color: rgb(13, 110, 253);
+    color: white;
+}
+
+.list-group-item:focus {
+    background-color: rgb(13, 110, 253);
+    color: white;
+}
+
+#indice {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
+
+.flecha {
+    position: fixed;
+    bottom: 20px;
+    right: 4%;
+}
+
+a {
+    color: white;
+    width: fit-content;
+    margin: auto;
+}
+
+a:hover {
+    color: rgb(13, 110, 253);
+}

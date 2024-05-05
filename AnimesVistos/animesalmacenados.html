@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes almacenados</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/animesalmacenados.css">
+    <base target="vta">
+    <!-- <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #212529;
+            width: 80%;
+            margin: auto;
+        }
+
+        .list-group-item {
+            background-color: #212529;
+            color: white;
+            border: 2px solid rgb(255 255 255 / 16%);
+        }
+
+        .list-group-item:hover {
+            background-color: rgb(13, 110, 253);
+            color: white;
+        }
+
+        .list-group-item:focus {
+            background-color: rgb(13, 110, 253);
+            color: white;
+        }
+
+        #indice {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        h3 {
+            margin-top: 50px;
+        }
+
+        .not-active {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        .flecha {
+            position: fixed;
+            bottom: 20px;
+            right: 4%;
+        }
+
+        a {
+            color: white;
+            width: fit-content;
+            margin: auto;
+        }
+
+        a:hover {
+            color: rgb(13, 110, 253);
+        }
+    </style> -->
+</head>
+
+<body class="text-light text-center">
+    <h1 class="border-bottom border-dark p-0" id="inicio">Animes almacenados</h1>
+
+    <div class="flecha">
+        <a href="#inicio" target="_self"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <div class="list-group" id="indice">
+        <h2>Indice</h2>
+        <a href="#Google" target="_self">Google</a>
+        <a href="#Wikipedia" target="_self">Wikipedia</a>
+    </div>
+
+    <h2>1º Disco</h2>
+    <h3 id="Google" class="mt-0">Google</h3>
+    <div class="list-group google">
+        <a href="https://www.google.com/search?q=Akame+ga+Kill!" class="list-group-item list-group-item-action">Akame ga
+            Kill!</a>
+        <a href="https://www.google.com/search?q=Akudama+Drive" class="list-group-item list-group-item-action">Akudama
+            Drive</a>
+        <a href="https://www.google.com/search?q=Angel+Beats!" class="list-group-item list-group-item-action">Angel
+            Beats!</a>
+        <a href="https://www.google.com/search?q=Anime-Gatari"
+            class="list-group-item list-group-item-action">Animegataris</a>
+        <a href="https://www.google.com/search?q=Ano+Hi+Mita+Hana+no+Namae+o+Bokutachi+wa+Mada+Shiranai"
+            class="list-group-item list-group-item-action">Anohana</a>
+        <a href="https://www.google.com/search?q=Another" class="list-group-item list-group-item-action">Another</a>
+        <a href="https://www.google.com/search?q=Ansatsu+Kyoshitsu"
+            class="list-group-item list-group-item-action">Ansatsu Kyoshitsu</a>
+        <a href="https://www.google.com/search?q=Ao+no+Exorcist" class="list-group-item list-group-item-action">Ao no
+            Exorcist</a>
+        <a href="https://www.google.com/search?q=Azur+Lane" class="list-group-item list-group-item-action">Azur Lane</a>
+        <a href="https://www.google.com/search?q=B+The+Beginning" class="list-group-item list-group-item-action">B the
+            Beginning</a>
+        <a href="https://www.google.com/search?q=Bakemonogatari"
+            class="list-group-item list-group-item-action">Bakemonogatari</a>
+        <a href="https://www.google.com/search?q=Ben-To" class="list-group-item list-group-item-action">Ben-To</a>
+        <a href="https://www.google.com/search?q=Black+Cat" class="list-group-item list-group-item-action">Black Cat</a>
+        <a href="https://www.google.com/search?q=Black+Rock+Shooter"
+            class="list-group-item list-group-item-action">Black Rock Shooter</a>
+        <a href="https://www.google.com/search?q=Blend+S" class="list-group-item list-group-item-action">Blend S</a>
+        <a href="#" class="list-group-item list-group-item-action not-active">Blood (Sin enlace)</a>
+        <a href="https://www.google.com/search?q=Bocchi+the+Rock!"
+            class="list-group-item list-group-item-action">¡Bocchi the Rock!</a>
+        <a href="https://www.google.com/search?q=Boukyaku+no+Senritsu"
+            class="list-group-item list-group-item-action">Boukyaku no Senritsu</a>
+        <a href="https://www.google.com/search?q=Buso+Shojo+Machiavellism"
+            class="list-group-item list-group-item-action">Busō Shōjo Machiavellism</a>
+        <a href="https://www.google.com/search?q=Chain+Chronicle" class="list-group-item list-group-item-action">Chain
+            Chronicle</a>
+        <a href="https://www.google.com/search?q=Chainsaw+Man" class="list-group-item list-group-item-action">Chainsaw
+            Man</a>
+        <a href="https://www.google.com/search?q=Charlotte" class="list-group-item list-group-item-action">Charlotte</a>
+        <a href="https://www.google.com/search?q=Chunibyo+Demo+Koi+ga+Shitai!"
+            class="list-group-item list-group-item-action">Chuunibyou demo Koi ga Shitai!</a>
+        <a href="https://www.google.com/search?q=Cyberpunk:+Edgerunners"
+            class="list-group-item list-group-item-action">Cyberpunk: Edgerunner</a>
+        <a href="https://www.google.com/search?q=Darker+than+Black"
+            class="list-group-item list-group-item-action">Darker Than Black</a>
+        <a href="https://www.google.com/search?q=Darling+in+the+Franxx"
+            class="list-group-item list-group-item-action">Darling in the Franxx</a>
+        <a href="https://www.google.com/search?q=Darwin's+Game" class="list-group-item list-group-item-action">Darwin's
+            Game</a>
+        <a href="https://www.google.com/search?q=Date+A+Live" class="list-group-item list-group-item-action">Date A
+            Live</a>
+        <a href="https://www.google.com/search?q=Death+Note" class="list-group-item list-group-item-action">Death
+            Note</a>
+        <a href="https://www.google.com/search?q=Dorohedoro"
+            class="list-group-item list-group-item-action">Dorohedoro</a>
+        <a href="https://www.google.com/search?q=Ergo+Proxy" class="list-group-item list-group-item-action">Ergo
+            Proxy</a>
+        <a href="https://www.google.com/search?q=Neon+Genesis+Evangelion"
+            class="list-group-item list-group-item-action">Evangelion</a>
+        <a href="https://www.google.com/search?q=FLCL" class="list-group-item list-group-item-action">FLCL</a>
+        <a href="https://www.google.com/search?q=Fuuka" class="list-group-item list-group-item-action">Fuuka</a>
+        <a href="https://www.google.com/search?q=Gamers!+anime"
+            class="list-group-item list-group-item-action">Gamers!</a>
+        <a href="https://www.google.com/search?q=Gate+(serie)" class="list-group-item list-group-item-action">GATE</a>
+        <a href="https://www.google.com/search?q=Girls+und+Panzer" class="list-group-item list-group-item-action">Girls
+            und Panzer</a>
+        <a href="https://www.google.com/search?q=Goblin+Slayer" class="list-group-item list-group-item-action">Goblin
+            Slayer</a>
+        <a href="https://www.google.com/search?q=Go+Tōbun+no+Hanayome"
+            class="list-group-item list-group-item-action">Go-Tōbun no Hanayome</a>
+        <a href="https://www.google.com/search?q=Hamatora" class="list-group-item list-group-item-action">Hamatora</a>
+        <a href="https://www.google.com/search?q=Happy+Sugar+Life" class="list-group-item list-group-item-action">Hapy
+            Sugar Life</a>
+        <a href="https://www.google.com/search?q=Hataraku+Saibou"
+            class="list-group-item list-group-item-action">Hataraku
+            Saibou</a>
+        <a href="https://www.google.com/search?q=Hello+World+(película)"
+            class="list-group-item list-group-item-action">Hello World</a>
+        <a href="https://www.google.com/search?q=High+School+DxD"
+            class="list-group-item list-group-item-action">Highscholl DxD</a>
+        <a href="https://www.google.com/search?q=Himouto!+Umaru-chan"
+            class="list-group-item list-group-item-action">Himouto! Umaru-chan</a>
+        <a href="https://www.google.com/search?q=Hyouka" class="list-group-item list-group-item-action">Hyouka</a>
+        <a href="https://www.google.com/search?q=Initial+D" class="list-group-item list-group-item-action">Initial D</a>
+        <a href="https://www.google.com/search?q=Inu+to+Hasami+wa+Tsukaiyou"
+            class="list-group-item list-group-item-action">Inu to Hasami wa Tsukaiyou</a>
+        <a href="https://www.google.com/search?q=Jigoku+Shoujo" class="list-group-item list-group-item-action">Jigoku
+            Shoujo</a>
+        <a href="https://www.google.com/search?q=Joshiraku" class="list-group-item list-group-item-action">Joshiraku</a>
+        <a href="https://www.google.com/search?q=Jujutsu+Kaisen" class="list-group-item list-group-item-action">Jujutsu
+            Kaisen</a>
+        <a href="https://www.google.com/search?q=Kaguya-sama:+Love+Is+War"
+            class="list-group-item list-group-item-action">Kaguya-sama wa Kokurasetai</a>
+        <a href="https://www.google.com/search?q=Kakegurui" class="list-group-item list-group-item-action">Kakegurui</a>
+        <a href="https://www.google.com/search?q=Kakumeiki+Valvrave"
+            class="list-group-item list-group-item-action">Kakumeiki Valvrave</a>
+        <a href="https://www.google.com/search?q=Kami-sama+ni+Natta+Hi"
+            class="list-group-item list-group-item-action">Kami-sama ni Natta Hi</a>
+        <a href="https://www.google.com/search?q=Kantai+Collection"
+            class="list-group-item list-group-item-action">Kantai Collection</a>
+        <a href="https://www.google.com/search?q=Keijo!!!!!!!!"
+            class="list-group-item list-group-item-action">Keijo!!!!!!!!</a>
+        <a href="https://www.google.com/search?q=Kill+la+Kill" class="list-group-item list-group-item-action">Kill la
+            Kill</a>
+        <a href="https://www.google.com/search?q=Killing+Bites" class="list-group-item list-group-item-action">Killing
+            Bites</a>
+        <a href="https://www.google.com/search?q=Kimetsu+no+Yaiba"
+            class="list-group-item list-group-item-action">Kimetsu no Yaiba</a>
+        <a href="https://www.google.com/search?q=Kimi+no+na+Wa" class="list-group-item list-group-item-action">Kimi No
+            Na
+            Wa</a>
+        <a href="https://www.google.com/search?q=Kissxsis" class="list-group-item list-group-item-action">Kiss x Sis</a>
+        <a href="https://www.google.com/search?q=Kobayashi-san+Chi+no+Maid+Dragon"
+            class="list-group-item list-group-item-action">Kobayashi-san Chi no Maid Dragon</a>
+        <a href="https://www.google.com/search?q=Komi-san+wa,+Komyushō+desu"
+            class="list-group-item list-group-item-action">Komi-san wa, Komyushō desu</a>
+        <a href="https://www.google.com/search?q=K-On!" class="list-group-item list-group-item-action">K-On!</a>
+        <a href="https://www.google.com/search?q=Konosuba!" class="list-group-item list-group-item-action">Konosuba!</a>
+        <a href="https://www.google.com/search?q=Kyoukai+no+Kanata"
+            class="list-group-item list-group-item-action">Kyoukai no Kanata</a>
+        <a href="https://www.google.com/search?q=Kyousougiga"
+            class="list-group-item list-group-item-action">Kyousougiga</a>
+        <a href="https://www.google.com/search?q=Kyuukyoku+Shinka+Shita+Full+Dive+RPG+ga+Genjitsu+Yorimo+Kuso-Ge+Dattara"
+            class="list-group-item list-group-item-action">Kyōkyoku Shinka Shita Full Dive RPG ga Genjitsu Yorimo
+            Kuso-Ge Dattara</a>
+        <a href="https://www.google.com/search?q=Mahouka+Koukou+no+Rettousei"
+            class="list-group-item list-group-item-action">Mahouka Koukou no Rettousei</a>
+        <a href="https://www.google.com/search?q=Mamahaha+no+Tsurego+ga+Motokano+datta"
+            class="list-group-item list-group-item-action">Mamahaha no Tsurego ga Motokano datta</a>
+        <a href="https://www.google.com/search?q=Megami-ryou+no+Ryoubo-kun"
+            class="list-group-item list-group-item-action">Megami-ryou no Ryoubo-kun</a>
+        <a href="https://www.google.com/search?q=Mekakucity+Actors"
+            class="list-group-item list-group-item-action">Mekakucity Actors (Kagerou Project)</a>
+        <a href="https://www.google.com/search?q=Mieruko-chan"
+            class="list-group-item list-group-item-action">Mieruko-chan</a>
+        <a href="https://www.google.com/search?q=Mirai+Nikki" class="list-group-item list-group-item-action">Mirai
+            Nikki</a>
+        <a href="https://www.google.com/search?q=Mob+Psycho+100" class="list-group-item list-group-item-action">Mob
+            Psycho 100</a>
+        <a href="https://www.google.com/search?q=Mushoku+Tensei" class="list-group-item list-group-item-action">Mushoku
+            Tensei: Isekai Ittara Honki Dasu</a>
+        <a href="https://www.google.com/search?q=Nanatsu+no+Taizai"
+            class="list-group-item list-group-item-action">Nanatsu no Taizai</a>
+        <a href="https://www.google.com/search?q=New+Game!" class="list-group-item list-group-item-action">New Game!</a>
+        <a href="https://www.google.com/search?q=Nier:+Automata+Ver1.1a"
+            class="list-group-item list-group-item-action">Nier Automata Ver1.1a</a>
+        <a href="https://www.google.com/search?q=No+Game+No+Life" class="list-group-item list-group-item-action">No Game
+            no Life</a>
+        <a href="https://www.google.com/search?q=Non+Non+Biyori" class="list-group-item list-group-item-action">Non Non
+            Biyori</a>
+        <a href="https://www.google.com/search?q=Noragami" class="list-group-item list-group-item-action">Noragami</a>
+        <a href="https://www.google.com/search?q=One-Punch+Man" class="list-group-item list-group-item-action">One Punch
+            Man</a>
+        <a href="https://www.google.com/search?q=Ore,+Twintail+ni+Narimasu."
+            class="list-group-item list-group-item-action">Ore, Twintails ni Narimasu</a>
+        <a href="https://www.google.com/search?q=Ousama+Game+The+Animation"
+            class="list-group-item list-group-item-action">Ōsama Game The Animation</a>
+        <a href="https://www.google.com/search?q=Overlord+anime"
+            class="list-group-item list-group-item-action">Overlord</a>
+        <a href="https://www.google.com/search?q=Owari+no+Seraph" class="list-group-item list-group-item-action">Owari
+            no Seraph</a>
+        <a href="https://www.google.com/search?q=Princess+Connect!+Re:Dive"
+            class="list-group-item list-group-item-action">Princess Connect! Re:Dive</a>
+        <a href="https://www.google.com/search?q=Qualidea+Code" class="list-group-item list-group-item-action">Qualidea
+            Code</a>
+        <a href="https://www.google.com/search?q=Sakura-sou+no+Pet+na+Kanojo"
+            class="list-group-item list-group-item-action">Sakura-sō no Pet na Kanojo</a>
+        <a href="https://www.google.com/search?q=Sangatsu+no+Lion"
+            class="list-group-item list-group-item-action">Sangatsu no Lion</a>
+        <a href="https://www.google.com/search?q=Shingeki+no+Kyojin"
+            class="list-group-item list-group-item-action">Shingeki no Kyojin</a>
+        <a href="https://www.google.com/search?q=Shin+Sekai+Yori" class="list-group-item list-group-item-action">Shin
+            Sekai Yori</a>
+        <a href="https://www.google.com/search?q=Sono+Bisque+Doll+wa+Koi+o_Suru"
+            class="list-group-item list-group-item-action">Sono Bisque Doll wa Koi o Suru</a>
+        <a href="https://www.google.com/search?q=Spy+x+Family" class="list-group-item list-group-item-action">Spy x
+            Family</a>
+        <a href="https://www.google.com/search?q=SSSS.Dynazenon"
+            class="list-group-item list-group-item-action">SSSS.Dynazenon</a>
+        <a href="https://www.google.com/search?q=SSSS.Gridman"
+            class="list-group-item list-group-item-action">SSSS.Gridman</a>
+        <a href="https://www.google.com/search?q=Suzumiya+Haruhi+no+Yuuutsu"
+            class="list-group-item list-group-item-action">Suzumiya Haruhi no Yūutsu</a>
+        <a href="https://www.google.com/search?q=Sword+Art+Online" class="list-group-item list-group-item-action">Sword
+            Art Online</a>
+        <a href="https://www.google.com/search?q=Tantei+wa+Mou,+Shindeiru."
+            class="list-group-item list-group-item-action">Tantei wa Mou, Shindeiru</a>
+        <a href="https://www.google.com/search?q=Tejina-senpai"
+            class="list-group-item list-group-item-action">Tejina-senpai</a>
+        <a href="https://www.google.com/search?q=Tenki+no+Ko" class="list-group-item list-group-item-action">Tenki
+            no Ko</a>
+        <a href="https://www.google.com/search?q=To+Love-Ru" class="list-group-item list-group-item-action">To
+            Love-Ru</a>
+        <a href="https://www.google.com/search?q=Tokyo_Ghoul" class="list-group-item list-group-item-action">Tokyo
+            Ghoul</a>
+        <a href="https://www.google.com/search?q=Tokyo_Revengers" class="list-group-item list-group-item-action">Tokyo
+            Revengers</a>
+        <a href="https://www.google.com/search?q=Violet_Evergarden"
+            class="list-group-item list-group-item-action">Violet Evergarden</a>
+        <a href="https://www.google.com/search?q=Wonder_Egg_Priority"
+            class="list-group-item list-group-item-action">Wonder Egg Priority</a>
+        <a href="https://www.google.com/search?q=Wotaku_ni_Koi_wa_Muzukashii"
+            class="list-group-item list-group-item-action">Wotaku ni Koi wa Muzukashī</a>
+        <a href="https://www.google.com/search?q=Yakusoku+no+Neverland"
+            class="list-group-item list-group-item-action">Yakusoku no Neverland</a>
+        <a href="https://www.google.com/search?q=Yofukashi+no+Uta"
+            class="list-group-item list-group-item-action">Yofukashi no Uta</a>
+        <a href="https://www.google.com/search?q=Zombie+Land+Saga" class="list-group-item list-group-item-action">Zombie
+            Land Saga</a>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------------------>
+
+    <h3 id="Wikipedia" class="mt-0">Wikipedia</h3>
+    <div class="list-group wikipedia">
+        <a href="https://es.wikipedia.org/wiki/Akame_ga_Kill!" class="list-group-item list-group-item-action">Akame ga
+            Kill!</a>
+        <a href="https://es.wikipedia.org/wiki/Akudama_Drive" class="list-group-item list-group-item-action">Akudama
+            Drive</a>
+        <a href="https://es.wikipedia.org/wiki/Angel_Beats!" class="list-group-item list-group-item-action">Angel
+            Beats!</a>
+        <a href="https://es.wikipedia.org/wiki/Anime-Gatari"
+            class="list-group-item list-group-item-action">Animegataris</a>
+        <a href="https://es.wikipedia.org/wiki/Ano_Hi_Mita_Hana_no_Namae_o_Bokutachi_wa_Mada_Shiranai."
+            class="list-group-item list-group-item-action">Anohana</a>
+        <a href="https://es.wikipedia.org/wiki/Another" class="list-group-item list-group-item-action">Another</a>
+        <a href="https://es.wikipedia.org/wiki/Assassination_Classroom"
+            class="list-group-item list-group-item-action">Ansatsu Kyoshitsu</a>
+        <a href="https://es.wikipedia.org/wiki/Blue_Exorcist" class="list-group-item list-group-item-action">Ao no
+            Exorcist</a>
+        <a href="https://es.wikipedia.org/wiki/Azur_Lane" class="list-group-item list-group-item-action">Azur Lane</a>
+        <a href="https://es.wikipedia.org/wiki/B_The_Beginning" class="list-group-item list-group-item-action">B the
+            Beginning</a>
+        <a href="https://es.wikipedia.org/wiki/Bakemonogatari"
+            class="list-group-item list-group-item-action">Bakemonogatari</a>
+        <a href="https://es.wikipedia.org/wiki/Ben-To" class="list-group-item list-group-item-action">Ben-To</a>
+        <a href="https://es.wikipedia.org/wiki/Black_Cat" class="list-group-item list-group-item-action">Black Cat</a>
+        <a href="https://es.wikipedia.org/wiki/Black_Rock_Shooter" class="list-group-item list-group-item-action">Black
+            Rock Shooter</a>
+        <a href="https://es.wikipedia.org/wiki/Blend_S" class="list-group-item list-group-item-action">Blend S</a>
+        <a href="#" class="list-group-item list-group-item-action not-active">Blood (Sin enlace)</a>
+        <a href="https://es.wikipedia.org/wiki/Bocchi_the_Rock!" class="list-group-item list-group-item-action">Bocchi
+            the Rock!</a>
+        <a href="https://en.wikipedia.org/wiki/Melody_of_Oblivion"
+            class="list-group-item list-group-item-action">Boukyaku no Senritsu</a>
+        <a href="https://es.wikipedia.org/wiki/Bus%C5%8D_Sh%C5%8Djo_Machiavellism"
+            class="list-group-item list-group-item-action">Busō Shōjo Machiavellism</a>
+        <a href="https://en.wikipedia.org/wiki/Chain_Chronicle" class="list-group-item list-group-item-action">Chain
+            Chronicle</a>
+        <a href="https://es.wikipedia.org/wiki/Chainsaw_Man" class="list-group-item list-group-item-action">Chainsaw
+            Man</a>
+        <a href="https://es.wikipedia.org/wiki/Charlotte_(anime)"
+            class="list-group-item list-group-item-action">Charlotte</a>
+        <a href="https://es.wikipedia.org/wiki/Ch%C5%ABniby%C5%8D_Demo_Koi_ga_Shitai!"
+            class="list-group-item list-group-item-action">Chuunibyou demo Koi ga Shitai!</a>
+        <a href="https://es.wikipedia.org/wiki/Cyberpunk:_Edgerunners"
+            class="list-group-item list-group-item-action">Cyberpunk: Edgerunner</a>
+        <a href="https://es.wikipedia.org/wiki/Darker_than_Black" class="list-group-item list-group-item-action">Darker
+            Than Black</a>
+        <a href="https://es.wikipedia.org/wiki/Darling_in_the_Franxx"
+            class="list-group-item list-group-item-action">Darling in the Franxx</a>
+        <a href="https://es.wikipedia.org/wiki/Darwin%27s_Game" class="list-group-item list-group-item-action">Darwin's
+            Game</a>
+        <a href="https://es.wikipedia.org/wiki/Date_A_Live" class="list-group-item list-group-item-action">Date A
+            Live</a>
+        <a href="https://es.wikipedia.org/wiki/Death_Note" class="list-group-item list-group-item-action">Death Note</a>
+        <a href="https://es.wikipedia.org/wiki/Dorohedoro" class="list-group-item list-group-item-action">Dorohedoro</a>
+        <a href="https://es.wikipedia.org/wiki/Ergo_Proxy" class="list-group-item list-group-item-action">Ergo Proxy</a>
+        <a href="https://es.wikipedia.org/wiki/Neon_Genesis_Evangelion"
+            class="list-group-item list-group-item-action">Evangelion</a>
+        <a href="https://es.wikipedia.org/wiki/FLCL" class="list-group-item list-group-item-action">FLCL</a>
+        <a href="https://es.wikipedia.org/wiki/F%C5%ABka" class="list-group-item list-group-item-action">Fuuka</a>
+        <a href="https://es.wikipedia.org/wiki/Gamers!" class="list-group-item list-group-item-action">Gamers!</a>
+        <a href="https://es.wikipedia.org/wiki/Gate_(serie)" class="list-group-item list-group-item-action">GATE</a>
+        <a href="https://es.wikipedia.org/wiki/Girls_und_Panzer" class="list-group-item list-group-item-action">Girls
+            und Panzer</a>
+        <a href="https://es.wikipedia.org/wiki/Goblin_Slayer" class="list-group-item list-group-item-action">Goblin
+            Slayer</a>
+        <a href="https://es.wikipedia.org/wiki/The_Quintessential_Quintuplets"
+            class="list-group-item list-group-item-action">Go-Tōbun no Hanayome</a>
+        <a href="https://es.wikipedia.org/wiki/Hamatora" class="list-group-item list-group-item-action">Hamatora</a>
+        <a href="https://es.wikipedia.org/wiki/Happy_Sugar_Life" class="list-group-item list-group-item-action">Hapy
+            Sugar Life</a>
+        <a href="https://es.wikipedia.org/wiki/Cells_at_Work!" class="list-group-item list-group-item-action">Hataraku
+            Saibou</a>
+        <a href="https://es.wikipedia.org/wiki/Hello_World_(pel%C3%ADcula)"
+            class="list-group-item list-group-item-action">Hello World</a>
+        <a href="https://es.wikipedia.org/wiki/High_School_DxD"
+            class="list-group-item list-group-item-action">Highscholl DxD</a>
+        <a href="https://es.wikipedia.org/wiki/Himouto!_Umaru-chan"
+            class="list-group-item list-group-item-action">Himouto! Umaru-chan</a>
+        <a href="https://es.wikipedia.org/wiki/Hyouka" class="list-group-item list-group-item-action">Hyouka</a>
+        <a href="https://es.wikipedia.org/wiki/Initial_D" class="list-group-item list-group-item-action">Initial D</a>
+        <a href="https://es.wikipedia.org/wiki/Inu_to_Hasami_wa_Tsukaiy%C5%8D"
+            class="list-group-item list-group-item-action">Inu to Hasami wa Tsukaiyou</a>
+        <a href="https://es.wikipedia.org/wiki/Jigoku_Sh%C5%8Djo" class="list-group-item list-group-item-action">Jigoku
+            Shoujo</a>
+        <a href="https://es.wikipedia.org/wiki/Joshiraku" class="list-group-item list-group-item-action">Joshiraku</a>
+        <a href="https://es.wikipedia.org/wiki/Jujutsu_Kaisen" class="list-group-item list-group-item-action">Jujutsu
+            Kaisen</a>
+        <a href="https://es.wikipedia.org/wiki/Kaguya-sama:_Love_Is_War"
+            class="list-group-item list-group-item-action">Kaguya-sama wa Kokurasetai</a>
+        <a href="https://es.wikipedia.org/wiki/Kakegurui" class="list-group-item list-group-item-action">Kakegurui</a>
+        <a href="https://es.wikipedia.org/wiki/Kakumeiki_Valvrave"
+            class="list-group-item list-group-item-action">Kakumeiki Valvrave</a>
+        <a href="https://es.wikipedia.org/wiki/The_Day_I_Became_a_God"
+            class="list-group-item list-group-item-action">Kami-sama ni Natta Hi</a>
+        <a href="https://es.wikipedia.org/wiki/Kantai_Collection" class="list-group-item list-group-item-action">Kantai
+            Collection</a>
+        <a href="https://es.wikipedia.org/wiki/Keijo!!!!!!!!"
+            class="list-group-item list-group-item-action">Keijo!!!!!!!!</a>
+        <a href="https://es.wikipedia.org/wiki/Kill_la_Kill" class="list-group-item list-group-item-action">Kill la
+            Kill</a>
+        <a href="https://es.wikipedia.org/wiki/Killing_Bites" class="list-group-item list-group-item-action">Killing
+            Bites</a>
+        <a href="https://es.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba"
+            class="list-group-item list-group-item-action">Kimetsu no Yaiba</a>
+        <a href="https://es.wikipedia.org/wiki/Your_Name" class="list-group-item list-group-item-action">Kimi No Na
+            Wa</a>
+        <a href="https://es.wikipedia.org/wiki/Kissxsis" class="list-group-item list-group-item-action">Kiss x Sis</a>
+        <a href="https://es.wikipedia.org/wiki/Miss_Kobayashi%27s_Dragon_Maid"
+            class="list-group-item list-group-item-action">Kobayashi-san Chi no Maid Dragon</a>
+        <a href="https://es.wikipedia.org/wiki/Komi_Can%27t_Communicate"
+            class="list-group-item list-group-item-action">Komi-san wa, Komyushō desu</a>
+        <a href="https://es.wikipedia.org/wiki/K-On!" class="list-group-item list-group-item-action">K-On!</a>
+        <a href="https://es.wikipedia.org/wiki/KonoSuba!" class="list-group-item list-group-item-action">Konosuba!</a>
+        <a href="https://es.wikipedia.org/wiki/Beyond_the_Boundary"
+            class="list-group-item list-group-item-action">Kyoukai no Kanata</a>
+        <a href="https://en.wikipedia.org/wiki/Kyousougiga"
+            class="list-group-item list-group-item-action">Kyousougiga</a>
+        <a href="https://es.wikipedia.org/wiki/Ky%C5%8Dkyoku_Shinka_Shita_Full_Dive_RPG_ga_Genjitsu_Yorimo_Kuso-Ge_Dattara"
+            class="list-group-item list-group-item-action">Kyōkyoku Shinka Shita Full Dive RPG ga Genjitsu Yorimo
+            Kuso-Ge Dattara</a>
+        <a href="https://es.wikipedia.org/wiki/The_Irregular_at_Magic_High_School"
+            class="list-group-item list-group-item-action">Mahouka Koukou no Rettousei</a>
+        <a href="https://es.wikipedia.org/wiki/Mamahaha_no_Tsurego_ga_Motokano_datta"
+            class="list-group-item list-group-item-action">Mamahaha no Tsurego ga Motokano datta</a>
+        <a href="https://es.wikipedia.org/wiki/Megami-ry%C5%8D_no_Ry%C5%8Dbo-kun"
+            class="list-group-item list-group-item-action">Megami-ryou no Ryoubo-kun</a>
+        <a href="https://es.wikipedia.org/wiki/Kagerou_Project"
+            class="list-group-item list-group-item-action">Mekakucity Actors (Kagerou Project)</a>
+        <a href="https://es.wikipedia.org/wiki/Mieruko-chan"
+            class="list-group-item list-group-item-action">Mieruko-chan</a>
+        <a href="https://es.wikipedia.org/wiki/The_Future_Diary" class="list-group-item list-group-item-action">Mirai
+            Nikki</a>
+        <a href="https://es.wikipedia.org/wiki/Mob_Psycho_100" class="list-group-item list-group-item-action">Mob Psycho
+            100</a>
+        <a href="https://es.wikipedia.org/wiki/Mushoku_Tensei" class="list-group-item list-group-item-action">Mushoku
+            Tensei: Isekai Ittara Honki Dasu</a>
+        <a href="https://es.wikipedia.org/wiki/Nanatsu_no_Taizai" class="list-group-item list-group-item-action">Nanatsu
+            no Taizai</a>
+        <a href="https://es.wikipedia.org/wiki/New_Game!" class="list-group-item list-group-item-action">New Game!</a>
+        <a href="https://es.wikipedia.org/wiki/Nier:_Automata_Ver1.1a"
+            class="list-group-item list-group-item-action">Nier Automata Ver1.1a</a>
+        <a href="https://es.wikipedia.org/wiki/No_Game_No_Life" class="list-group-item list-group-item-action">No Game
+            No Life</a>
+        <a href="https://es.wikipedia.org/wiki/Non_Non_Biyori" class="list-group-item list-group-item-action">Non Non
+            Biyori</a>
+        <a href="https://es.wikipedia.org/wiki/Noragami" class="list-group-item list-group-item-action">Noragami</a>
+        <a href="https://es.wikipedia.org/wiki/One-Punch_Man" class="list-group-item list-group-item-action">One Punch
+            Man</a>
+        <a href="https://es.wikipedia.org/wiki/Ore,_Twintail_ni_Narimasu."
+            class="list-group-item list-group-item-action">Ore, Twintail ni Narimasu</a>
+        <a href="https://es.wikipedia.org/wiki/%C5%8Csama_Game_The_Animation"
+            class="list-group-item list-group-item-action">Ōsama Game The Animation</a>
+        <a href="https://es.wikipedia.org/wiki/Overlord_(novela_ligera)"
+            class="list-group-item list-group-item-action">Overlord</a>
+        <a href="https://es.wikipedia.org/wiki/Owari_no_Seraph" class="list-group-item list-group-item-action">Owari no
+            Seraph</a>
+        <a href="https://es.wikipedia.org/wiki/Princess_Connect!_Re:Dive"
+            class="list-group-item list-group-item-action">Princess Connect! Re:Dive</a>
+        <a href="https://en.wikipedia.org/wiki/Qualidea_Code" class="list-group-item list-group-item-action">Qualidea
+            Code</a>
+        <a href="https://es.wikipedia.org/wiki/Sakura-s%C5%8D_no_Pet_na_Kanojo"
+            class="list-group-item list-group-item-action">Sakura-sō no Pet na Kanojo
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Sangatsu_no_Lion" class="list-group-item list-group-item-action">Sangatsu
+            no Lion</a>
+        <a href="https://es.wikipedia.org/wiki/Shingeki_no_Kyojin"
+            class="list-group-item list-group-item-action">Shingeki no Kyojin</a>
+        <a href="https://es.wikipedia.org/wiki/Shin_Sekai_Yori" class="list-group-item list-group-item-action">Shin
+            Sekai Yori</a>
+        <a href="https://es.wikipedia.org/wiki/Sono_Bisque_Doll_wa_Koi_o_Suru"
+            class="list-group-item list-group-item-action">Sono Bisque Doll wa Koi o Suru
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Spy_%C3%97_Family" class="list-group-item list-group-item-action">Spy x
+            Family
+        </a>
+        <a href="https://es.wikipedia.org/wiki/SSSS.Dynazenon"
+            class="list-group-item list-group-item-action">SSSS.Dynazenon
+        </a>
+        <a href="https://es.wikipedia.org/wiki/SSSS.Gridman" class="list-group-item list-group-item-action">SSSS.Gridman
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Suzumiya_Haruhi_no_Y%C5%AButsu"
+            class="list-group-item list-group-item-action">Suzumiya Haruhi no Yūutsu
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Sword_Art_Online" class="list-group-item list-group-item-action">Sword
+            Art Online</a>
+        <a href="https://es.wikipedia.org/wiki/Tantei_wa_Mou,_Shindeiru."
+            class="list-group-item list-group-item-action">Tantei wa Mou, Shindeiru</a>
+        <a href="https://es.wikipedia.org/wiki/Tejina-senpai"
+            class="list-group-item list-group-item-action">Tejina-senpai</a>
+        <a href="https://es.wikipedia.org/wiki/El_tiempo_contigo" class="list-group-item list-group-item-action">Tenki
+            no Ko</a>
+        <a href="https://es.wikipedia.org/wiki/To_Love-Ru" class="list-group-item list-group-item-action">To Love-Ru</a>
+        <a href="https://es.wikipedia.org/wiki/Tokyo_Ghoul" class="list-group-item list-group-item-action">Tokyo
+            Ghoul</a>
+        <a href="https://es.wikipedia.org/wiki/Tokyo_Revengers" class="list-group-item list-group-item-action">Tokyo
+            Revengers</a>
+        <a href="https://es.wikipedia.org/wiki/Violet_Evergarden" class="list-group-item list-group-item-action">Violet
+            Evergarden</a>
+        <a href="https://es.wikipedia.org/wiki/Wonder_Egg_Priority"
+            class="list-group-item list-group-item-action">Wonder Egg Priority
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Wotaku_ni_Koi_wa_Muzukash%C4%AB"
+            class="list-group-item list-group-item-action">Wotaku ni Koi wa Muzukashī
+        </a>
+        <a href="https://es.wikipedia.org/wiki/The_Promised_Neverland"
+            class="list-group-item list-group-item-action">Yakusoku no Neverland</a>
+        <a href="https://es.wikipedia.org/wiki/Yofukashi_no_Uta"
+            class="list-group-item list-group-item-action">Yofukashi no Uta
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Zombieland_Saga"
+            class="list-group-item list-group-item-action">Zombieland Saga</a>
+    </div>
+</body>
+
+</html>

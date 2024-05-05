@@ -1,0 +1,17 @@
+body {
+    background-color: #212529;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+a {
+    color: white;
+    width: fit-content;
+    margin: auto;
+    font-size: 20px;
+}
+
+a:hover {
+    color: rgb(13, 110, 253);
+}
