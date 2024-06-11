@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes almacenados</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/animesalmacenados.css">
+    <base target="vta">
+    <!-- <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #212529;
+            width: 80%;
+            margin: auto;
+        }
+
+        .list-group-item {
+            background-color: #212529;
+            color: white;
+            border: 2px solid rgb(255 255 255 / 16%);
+        }
+
+        .list-group-item:hover {
+            background-color: rgb(13, 110, 253);
+            color: white;
+        }
+
+        .list-group-item:focus {
+            background-color: rgb(13, 110, 253);
+            color: white;
+        }
+
+        #indice {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        h3 {
+            margin-top: 50px;
+        }
+
+        .not-active {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        .flecha {
+            position: fixed;
+            bottom: 20px;
+            right: 4%;
+        }
+
+        a {
+            color: white;
+            width: fit-content;
+            margin: auto;
+        }
+
+        a:hover {
+            color: rgb(13, 110, 253);
+        }
+    </style> -->
+</head>
+
+<body class="text-light text-center">
+    <h1 class="border-bottom border-dark p-0" id="inicio">Animes almacenados</h1>
+
+    <div class="flecha">
+        <a href="#inicio" target="_self"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <div class="list-group" id="indice">
+        <h2>Indice</h2>
+        <a href="#Google" target="_self">Google</a>
+        <a href="#Wikipedia" target="_self">Wikipedia</a>
+    </div>
+
+    <h2>2º Disco</h2>
+    <h3 id="Google" class="mt-0">Google</h3>
+    <div class="list-group google">
+        <a href="https://www.google.com/search?q=Bleach"
+            class="list-group-item list-group-item-action">Bleach</a>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------------------>
+
+    <h3 id="Wikipedia" class="mt-0">Wikipedia</h3>
+    <div class="list-group wikipedia">
+        <a href="https://es.wikipedia.org/wiki/Bleach" class="list-group-item list-group-item-action">Bleach</a>
+    </div>
+</body>
+
+</html>
